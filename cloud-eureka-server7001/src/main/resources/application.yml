@@ -1,0 +1,34 @@
+server:
+  port: 7001
+
+spring:
+  application:
+    name: eurekaServer
+
+# 单机版
+#eureka:
+#  instance:
+#    hostname: localhost  #eureka服务端的实例名字
+#  client:
+#    register-with-eureka: false    #表示不向注册中心注册自己
+#    fetch-registry: false   #表示自己就是注册中心，职责是维护服务实例，并不需要去检索服务
+#    service-url:
+#      #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+#      defaultZone: http://localhost:7001/eureka/
+
+
+#集群版
+eureka:
+  instance:
+    hostname: eureka7001.com    #eureka服务端的实例名字
+  client:
+    register-with-eureka: true    #表示是否向注册中心注册自己
+    fetch-registry: false   #表示自己就是注册中心，职责是维护服务实例，并不需要去检索服务
+    service-url:
+      #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+      defaultZone: http://eureka7002.com:7002/eureka #互相注册
+  server:
+#    开启自我保护机制，保证不可用服务不会被马上踢除(去除)
+    enable-self-preservation: true
+    eviction-interval-timer-in-ms: 0
+
