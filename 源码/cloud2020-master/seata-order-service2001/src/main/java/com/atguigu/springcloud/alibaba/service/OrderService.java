@@ -1,6 +1,6 @@
-package com.atguigu.springcloud.alibaba.service;
+package com.rio.service;
 
-import com.atguigu.springcloud.alibaba.domain.Order;
+import com.rio.domain.Order;
 
 /**
  * @author lixiaolong

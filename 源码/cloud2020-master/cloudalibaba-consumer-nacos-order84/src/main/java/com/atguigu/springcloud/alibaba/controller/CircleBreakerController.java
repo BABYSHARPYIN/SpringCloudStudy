@@ -1,8 +1,8 @@
-package com.atguigu.springcloud.alibaba.controller;
+package com.rio.controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
-import com.atguigu.springcloud.alibaba.service.PaymentService;
+import com.rio.service.PaymentService;
 import com.atguigu.springcloud.entities.CommonResult;
 import com.atguigu.springcloud.entities.Payment;
 import lombok.extern.slf4j.Slf4j;

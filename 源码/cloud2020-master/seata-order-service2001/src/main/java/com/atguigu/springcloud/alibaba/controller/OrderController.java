@@ -1,8 +1,8 @@
-package com.atguigu.springcloud.alibaba.controller;
+package com.rio.controller;
 
-import com.atguigu.springcloud.alibaba.domain.CommonResult;
-import com.atguigu.springcloud.alibaba.domain.Order;
-import com.atguigu.springcloud.alibaba.service.OrderService;
+import com.rio.domain.CommonResult;
+import com.rio.domain.Order;
+import com.rio.service.OrderService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

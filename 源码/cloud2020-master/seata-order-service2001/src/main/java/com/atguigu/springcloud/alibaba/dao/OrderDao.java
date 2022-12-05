@@ -1,6 +1,6 @@
-package com.atguigu.springcloud.alibaba.dao;
+package com.rio.dao;
 
-import com.atguigu.springcloud.alibaba.domain.Order;
+import com.rio.domain.Order;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

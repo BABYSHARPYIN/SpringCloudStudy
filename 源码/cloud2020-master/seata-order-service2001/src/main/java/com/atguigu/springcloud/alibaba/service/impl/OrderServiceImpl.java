@@ -1,10 +1,10 @@
-package com.atguigu.springcloud.alibaba.service.impl;
+package com.rio.service.impl;
 
-import com.atguigu.springcloud.alibaba.dao.OrderDao;
-import com.atguigu.springcloud.alibaba.domain.Order;
-import com.atguigu.springcloud.alibaba.service.AccountService;
-import com.atguigu.springcloud.alibaba.service.OrderService;
-import com.atguigu.springcloud.alibaba.service.StorageService;
+import com.rio.dao.OrderDao;
+import com.rio.domain.Order;
+import com.rio.service.AccountService;
+import com.rio.service.OrderService;
+import com.rio.service.StorageService;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -29,7 +29,7 @@ public class OrderServiceImpl implements OrderService {
      * 创建订单->调用库存服务扣减库存->调用账户服务扣减账户余额->修改订单状态
      * 简单说：下订单->扣库存->减余额->改状态
      * 注释掉 @GlobalTransactional 的时候，需要注意下方这个方法里面手动模拟了延时，也需要注释掉
-     * com.atguigu.springcloud.alibaba.service.impl.AccountServiceImpl#decrease(java.lang.Long, java.math.BigDecimal)
+     * com.rio.service.impl.AccountServiceImpl#decrease(java.lang.Long, java.math.BigDecimal)
      */
     @Override
     @GlobalTransactional(name = "fsp-create-order", rollbackFor = Exception.class)

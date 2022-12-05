@@ -18,7 +18,22 @@
         <module>cloud-providerconsul-payment8006</module>
         <!--springCloud 整合 hystrix-->
         <module>cloud-provider-hystrix-payment8001</module>
+        <!--springCloud 整合 nacos-->
+        <module>cloudalibaba-provider-payment9001</module>
+        <module>cloudalibaba-provider-payment9002</module>
+        <!--springCloud 整合 sentinel-->
+        <module>cloudalibaba-sentinel-service8401</module>
+        <!--springCloud 整合 rocketmq-->
+
+
+
         <!--消费者-->
+        <!--nacos服务注册与发现-->
+        <module>cloudalibaba-consumer-nacos-order83</module>
+        <module>cloudalibaba-consumer-nacos-order84</module>
+        <!--nacos配置中心-->
+        <module>cloudalibaba-config-nacos-client3377</module>
+
         <!--springCloud 整合 eureka-->
         <module>cloud-consumer-order80</module>
         <!--springCloud 整合 zookeeper-->
@@ -41,6 +56,15 @@
         <!--eureka-->
         <module>cloud-eureka-server7001</module>
         <module>cloud-eureka-server7002</module>
+        <!--Spring Cloud Alibaba + Nacos + Dubbo + OpenFeign + Sentinel + Seata -->
+        <module>spring-cloud-alibaba-samples</module>
+
+        <!--学习底层原理模块 SpringCloudAlibaba 微服务原理与实战-->
+        <module>study</module>
+        <!--手写 starter-->
+        <module>redis-spring-boot-starter</module>
+        <module>cloudalibaba-rocketMQ</module>
+        <module>jwt</module>
     </modules>
     <packaging>pom</packaging>
 

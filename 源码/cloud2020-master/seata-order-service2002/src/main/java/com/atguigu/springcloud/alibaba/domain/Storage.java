@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.alibaba.domain;
+package com.rio.domain;
 
 import lombok.Data;
 

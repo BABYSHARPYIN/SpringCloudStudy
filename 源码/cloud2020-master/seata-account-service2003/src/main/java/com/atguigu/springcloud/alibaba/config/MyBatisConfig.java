@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.alibaba.config;
+package com.rio.config;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
@@ -8,6 +8,6 @@ import org.springframework.context.annotation.Configuration;
  * @date 2019-12-11 16:57
  */
 @Configuration
-@MapperScan({"com.atguigu.springcloud.alibaba.dao"})
+@MapperScan({"com.rio.dao"})
 public class MyBatisConfig {
 }

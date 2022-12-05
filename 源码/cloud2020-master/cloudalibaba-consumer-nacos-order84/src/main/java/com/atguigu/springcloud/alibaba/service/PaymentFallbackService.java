@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.alibaba.service;
+package com.rio.service;
 
 import com.atguigu.springcloud.entities.CommonResult;
 import com.atguigu.springcloud.entities.Payment;

@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoconfigure=com.rio.RedissonAutoConfiguration

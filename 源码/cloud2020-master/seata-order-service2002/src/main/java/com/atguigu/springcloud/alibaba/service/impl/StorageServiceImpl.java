@@ -1,7 +1,7 @@
-package com.atguigu.springcloud.alibaba.service.impl;
+package com.rio.service.impl;
 
-import com.atguigu.springcloud.alibaba.dao.StorageDao;
-import com.atguigu.springcloud.alibaba.service.StorageService;
+import com.rio.dao.StorageDao;
+import com.rio.service.StorageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
